@@ -17,37 +17,32 @@ const certifications = [
   {
     title: "AI and Machine Learning Foundations",
     issuer: "Google Cloud",
-    date: "2024",
+    date: "2025",
     skills: ["Python", "TensorFlow", "ML Algorithms"],
-    credentialUrl: "#",
   },
   {
     title: "JavaScript Algorithms and Data Structures",
     issuer: "freeCodeCamp",
-    date: "2023",
+    date: "2024",
     skills: ["JavaScript", "Algorithms", "Data Structures"],
-    credentialUrl: "#",
   },
   {
     title: "MongoDB Certified Developer",
     issuer: "MongoDB University",
-    date: "2024",
+    date: "2025",
     skills: ["MongoDB", "NoSQL", "Database Design"],
-    credentialUrl: "#",
   },
   {
     title: "React - The Complete Guide",
     issuer: "Udemy",
-    date: "2023",
+    date: "2025",
     skills: ["React", "Redux", "React Hooks"],
-    credentialUrl: "#",
   },
   {
     title: "Git and GitHub Essentials",
     issuer: "LinkedIn Learning",
-    date: "2023",
+    date: "2024",
     skills: ["Git", "GitHub", "Version Control"],
-    credentialUrl: "#",
   },
 ];
 
@@ -126,10 +121,7 @@ export default function CertificationsSection() {
                       asChild
                       data-testid={`button-cert-${cert.title.toLowerCase().replace(/\s+/g, '-')}`}
                     >
-                      <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        View Credential
-                      </a>
+                      
                     </Button>
                   </div>
                 </Card>

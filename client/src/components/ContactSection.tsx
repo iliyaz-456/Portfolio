@@ -170,14 +170,14 @@ export default function ContactSection() {
                   </a>
 
                   <a
-                    href="mailto:contact@syediliyaz.com"
+                    href="mailto:syediliyaz803@gmail.com"
                     className="flex items-center gap-4 p-4 rounded-md border border-border bg-card hover-elevate active-elevate-2 transition-all group"
                     data-testid="link-contact-email"
                   >
                     <Mail className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
                     <div>
                       <div className="font-medium text-foreground">Email</div>
-                      <div className="text-sm text-muted-foreground">contact@syediliyaz.com</div>
+                      <div className="text-sm text-muted-foreground">syediliyaz803@gmail.com</div>
                     </div>
                   </a>
                 </div>
