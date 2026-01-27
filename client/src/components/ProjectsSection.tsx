@@ -13,8 +13,14 @@ const projects = [
     githubUrl: "https://github.com/iliyaz-456/virrtualshopAI",
   },
   {
+    title: "SPARSH",
+    description: "Smart India Hackathon FINALE 2025 project - Alumni Data Management Platform. A comprehensive solution for educational institutions to manage and engage with their alumni network effectively.",
+    techStack: ["React", "Node.js", "WebRTC", "MongoDB", "Express"],
+    githubUrl: "https://github.com/iliyaz-456/Sparsh",
+  },
+  {
     title: "Telemedicine Platform",
-    description: "Smart India Hackathon 2025 project - A comprehensive telemedicine platform connecting patients with healthcare providers remotely. Features include video consultations, prescription management, and health monitoring.",
+    description: "A comprehensive telemedicine platform connecting patients with healthcare providers remotely. Features include video consultations, prescription management, and health monitoring.",
     techStack: ["React", "Node.js", "WebRTC", "MongoDB", "Express"],
     githubUrl: "https://github.com/iliyaz-456/Telemedicine-",
   },

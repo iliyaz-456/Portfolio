@@ -30,12 +30,6 @@ const roles = [
     color: "primary",
   },
   {
-    title: "Mobile Developer",
-    icon: Smartphone,
-    description: "Building cross-platform mobile applications with responsive and intuitive user interfaces.",
-    color: "accent",
-  },
-  {
     title: "Product Innovator",
     icon: Lightbulb,
     description: "Transforming ideas into reality through creative problem-solving and strategic thinking.",

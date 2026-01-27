@@ -13,8 +13,8 @@ const achievements = [
     color: "primary",
   },
   {
-    title: "Smart India Hackathon 2025",
-    description: "Developed Telemedicine platform for SIH 2025, connecting healthcare providers with patients remotely.",
+    title: "Smart India Hackathon FINALISTS 2025",
+    description: "Developed Alumni Data Managment latform for SIH Finale 2025, showcasing problem-solving and technical skills.",
     date: "2025",
     icon: Star,
     color: "accent",
@@ -27,25 +27,11 @@ const achievements = [
     color: "secondary",
   },
   {
-    title: "Campus Ambassador",
-    description: "Selected as Student Campus Ambassador for Dive Money, representing the brand and organizing fintech events.",
-    date: "2025",
-    icon: Target,
-    color: "primary",
-  },
-  {
     title: "Virtual Shopping AI Launch",
     description: "Launched AI-powered virtual shopping assistant using advanced NLP and computer vision technologies.",
     date: "2024",
     icon: Trophy,
     color: "accent",
-  },
-  {
-    title: "Full-Stack Development Excellence",
-    description: "Mastered MERN stack and modern web technologies, building scalable and user-friendly applications.",
-    date: "2023-2024",
-    icon: Star,
-    color: "secondary",
   },
 ];
 
