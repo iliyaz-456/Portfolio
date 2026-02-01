@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Sparkles } from "lucide-react";
-import profileImage from "@assets/WhatsApp Image 2025-10-23 at 15.28.14_a5e8aec0_1761213514389.jpg";
+import profileImage from "@assets/profile.jpg";
 
 export default function AboutSection() {
   const ref = useRef(null);
