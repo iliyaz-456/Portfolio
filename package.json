@@ -4,13 +4,8 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "postbuild": "copy /Y dist\\index.html dist\\404.html",
-    "preview": "vite preview",
-    "check": "tsc",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "postbuild": "copyfiles dist/index.html dist/404.html"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -78,6 +73,7 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.4.20",
+    "copyfiles": "^2.4.1",
     "gh-pages": "^6.3.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^4.1.18",
