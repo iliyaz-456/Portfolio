@@ -112,7 +112,7 @@ export default function HeroSection() {
                 className="border-primary/50 hover:border-primary"
                 data-testid="button-get-in-touch"
               >
-                Get in Touch
+                Get in Touch.
               </Button>
             </div>
             <button
