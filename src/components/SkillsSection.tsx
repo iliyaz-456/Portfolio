@@ -20,7 +20,8 @@ export default function SkillsSection() {
 
   return (
     <section id="skills" className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background via-card/30 to-background" />
+      <div className="absolute inset-0 hero-grid opacity-10" />
       
       <div className="container relative z-10 px-6">
         <motion.div
@@ -52,7 +53,7 @@ export default function SkillsSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                className="relative"
+                className="relative glass-panel rounded-2xl p-5"
                 onMouseEnter={() => setHoveredSkill(skill.name)}
                 onMouseLeave={() => setHoveredSkill(null)}
               >
@@ -61,23 +62,31 @@ export default function SkillsSection() {
                     <h3 className="text-lg font-semibold text-foreground">
                       {skill.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground">{skill.category}</p>
+                    <span className="inline-flex items-center rounded-full border border-border/60 px-2 py-0.5 text-xs font-medium text-foreground/70">
+                      {skill.category}
+                    </span>
                   </div>
                   <span className="text-sm font-medium text-primary">
                     {skill.level}%
                   </span>
                 </div>
 
-                <div className="relative h-3 bg-muted rounded-full overflow-hidden">
+                <div className="relative h-3 rounded-full overflow-hidden border border-white/15 bg-white/10">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={isInView ? { width: `${skill.level}%` } : {}}
                     transition={{ delay: 0.5 + index * 0.1, duration: 1, ease: "easeOut" }}
-                    className="absolute inset-y-0 left-0 rounded-full bg-primary"
+                    className="absolute inset-y-0 left-0 rounded-full bg-white"
                     style={{
-                      boxShadow: hoveredSkill === skill.name ? "0 0 20px hsl(var(--primary) / 0.5)" : "none",
+                      boxShadow: hoveredSkill === skill.name
+                        ? "0 0 16px rgba(255, 255, 255, 0.8)"
+                        : "0 0 8px rgba(255, 255, 255, 0.5)",
                     }}
                   />
+                </div>
+                <div className="mt-3 flex items-center justify-between text-xs text-foreground/60">
+                  <span>Proficiency</span>
+                  <span>Growing with every build</span>
                 </div>
               </motion.div>
             ))}
@@ -87,7 +96,7 @@ export default function SkillsSection() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 1, duration: 0.6 }}
-            className="mt-12 p-6 rounded-md border border-primary/20 bg-primary/5"
+            className="mt-12 p-6 rounded-2xl border border-primary/20 glass-panel"
           >
             <p className="text-foreground/80 text-center">
               Always learning and exploring new technologies to stay at the cutting edge of development.

@@ -36,7 +36,13 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card/50 to-background" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(180deg, hsl(var(--background)), hsl(var(--card) / 0.5), hsl(var(--background)))",
+        }}
+      />
+      <div className="absolute inset-0 hero-grid opacity-10" />
       
       <div className="container relative z-10 px-6">
         <motion.div
@@ -67,7 +73,7 @@ export default function ContactSection() {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 glass-panel rounded-2xl p-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                     Name
@@ -79,7 +85,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     placeholder="Your name"
                     required
-                    className="bg-card border-border"
+                    className="bg-transparent border-border/60"
                     data-testid="input-name"
                   />
                 </div>
@@ -96,7 +102,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     placeholder="your.email@example.com"
                     required
-                    className="bg-card border-border"
+                    className="bg-transparent border-border/60"
                     data-testid="input-email"
                   />
                 </div>
@@ -113,7 +119,7 @@ export default function ContactSection() {
                     placeholder="Tell me about your project or idea..."
                     rows={6}
                     required
-                    className="bg-card border-border resize-none"
+                    className="bg-transparent border-border/60 resize-none"
                     data-testid="input-message"
                   />
                 </div>
@@ -145,7 +151,7 @@ export default function ContactSection() {
                     href="https://github.com/iliyaz-456"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-md border border-border bg-card hover-elevate active-elevate-2 transition-all group"
+                    className="flex items-center gap-4 p-4 rounded-2xl border border-border/60 glass-panel hover-elevate active-elevate-2 transition-all group"
                     data-testid="link-contact-github"
                   >
                     <Github className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
@@ -159,7 +165,7 @@ export default function ContactSection() {
                     href="https://www.linkedin.com/in/syediliyaz18"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-md border border-border bg-card hover-elevate active-elevate-2 transition-all group"
+                    className="flex items-center gap-4 p-4 rounded-2xl border border-border/60 glass-panel hover-elevate active-elevate-2 transition-all group"
                     data-testid="link-contact-linkedin"
                   >
                     <Linkedin className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
@@ -171,7 +177,7 @@ export default function ContactSection() {
 
                   <a
                     href="mailto:syediliyaz803@gmail.com"
-                    className="flex items-center gap-4 p-4 rounded-md border border-border bg-card hover-elevate active-elevate-2 transition-all group"
+                    className="flex items-center gap-4 p-4 rounded-2xl border border-border/60 glass-panel hover-elevate active-elevate-2 transition-all group"
                     data-testid="link-contact-email"
                   >
                     <Mail className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
@@ -183,7 +189,7 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="p-6 rounded-md border border-accent/20 bg-accent/5">
+              <div className="p-6 rounded-2xl border border-accent/20 glass-panel">
                 <h4 className="font-semibold text-foreground mb-2">Open to Opportunities</h4>
                 <p className="text-foreground/70 text-sm">
                   I'm always interested in hearing about new projects, collaborations, and opportunities to create innovative solutions.

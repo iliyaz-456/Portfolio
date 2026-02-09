@@ -29,8 +29,13 @@ export default function ProjectCard({
       transition={{ delay: index * 0.1, duration: 0.5 }}
       className="group"
     >
-      <Card className="relative overflow-visible h-full border-2 border-border hover:border-primary/50 transition-all duration-300">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <Card className="relative overflow-visible h-full border-2 border-border/60 hover:border-primary/50 transition-all duration-300 glass-panel rounded-2xl">
+        <div
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          style={{
+            background: "linear-gradient(135deg, hsl(var(--primary) / 0.05), transparent, hsl(var(--accent) / 0.05))",
+          }}
+        />
         
         <div className="relative p-6 space-y-4">
           <div className="flex items-start justify-between gap-4">

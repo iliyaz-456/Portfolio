@@ -43,7 +43,8 @@ export default function ProfessionalRolesSection() {
 
   return (
     <section className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-gradient-to-b from-card/50 via-background to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-card/50 via-background to-background" />
+      <div className="absolute inset-0 hero-grid opacity-10" />
       
       <div className="container relative z-10 px-6">
         <motion.div
@@ -78,7 +79,7 @@ export default function ProfessionalRolesSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
                 >
-                  <Card className="h-full p-6 border-2 hover:border-primary/50 hover-elevate active-elevate-2 transition-all group cursor-pointer">
+                  <Card className="h-full p-6 border-2 border-border/60 hover:border-primary/50 hover-elevate active-elevate-2 transition-all group cursor-pointer glass-panel rounded-2xl">
                     <div className="flex flex-col items-start space-y-4">
                       <div 
                         className="w-14 h-14 rounded-md flex items-center justify-center transition-transform group-hover:scale-110"

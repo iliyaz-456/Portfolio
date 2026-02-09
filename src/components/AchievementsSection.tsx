@@ -41,7 +41,8 @@ export default function AchievementsSection() {
 
   return (
     <section id="achievements" className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-gradient-to-b from-card/30 via-background to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-card/30 via-background to-background" />
+      <div className="absolute inset-0 hero-grid opacity-10" />
       
       <div className="container relative z-10 px-6">
         <motion.div
@@ -76,10 +77,10 @@ export default function AchievementsSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
                 >
-                  <Card className="h-full p-6 border-2 hover:border-primary/50 hover-elevate active-elevate-2 transition-all group">
+                  <Card className="h-full p-6 border-2 border-border/60 hover:border-primary/50 hover-elevate active-elevate-2 transition-all group glass-panel rounded-2xl">
                     <div className="flex items-start gap-4">
                       <div 
-                        className="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
+                        className="w-12 h-12 rounded-md flex items-center justify-center shrink-0 transition-transform group-hover:scale-110"
                         style={{
                           backgroundColor: `hsl(var(--${achievement.color}) / 0.1)`,
                           border: `2px solid hsl(var(--${achievement.color}))`,

@@ -32,7 +32,8 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card/50" />
+      <div className="absolute inset-0 bg-linear-to-b from-background via-background to-card/50" />
+      <div className="absolute inset-0 hero-grid opacity-15" />
       
       <div className="container relative z-10 px-6">
         <motion.div

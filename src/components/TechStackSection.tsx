@@ -24,7 +24,6 @@ const techCategories = [
     technologies: [
       { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
       { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
       { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
     ],
   },
@@ -32,9 +31,6 @@ const techCategories = [
     name: "AI / ML",
     technologies: [
       { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
-      { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
-      { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
     ],
   },
   {
@@ -53,7 +49,8 @@ export default function TechStackSection() {
 
   return (
     <section id="tech-stack" className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background via-card/30 to-background" />
+      <div className="absolute inset-0 hero-grid opacity-10" />
       
       <div className="container relative z-10 px-6">
         <motion.div
@@ -99,7 +96,7 @@ export default function TechStackSection() {
                         delay: 0.4 + categoryIndex * 0.1 + techIndex * 0.05, 
                         duration: 0.3 
                       }}
-                      className="group flex flex-col items-center gap-3 p-4 rounded-md hover-elevate active-elevate-2 transition-all cursor-pointer"
+                      className="group flex flex-col items-center gap-3 p-4 rounded-2xl glass-panel hover-elevate active-elevate-2 transition-all cursor-pointer"
                       title={tech.name}
                     >
                       <div className="w-12 h-12 flex items-center justify-center">

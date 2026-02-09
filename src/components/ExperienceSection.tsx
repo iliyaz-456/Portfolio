@@ -15,7 +15,6 @@ const experiences = [
     description: "internship focused on building and optimizing web applications, collaborating with the development team to enhance user experience and implement new features.",
     skills: ["Webdev", "Consistency", "Teamwork"],
     color: "secondary",
-    current: true,
   },
   {
     title: "Web Development Intern",
@@ -26,7 +25,6 @@ const experiences = [
     description: "internship focused on building and optimizing web applications, collaborating with the development team to enhance user experience and implement new features.",
     skills: ["Webdev", "Consistency", "Teamwork"],
     color: "secondary",
-    current: true,
   },
   {
     title: "Open Source Team Member",
@@ -58,7 +56,8 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-gradient-to-b from-card/50 via-background to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-card/50 via-background to-background" />
+      <div className="absolute inset-0 hero-grid opacity-10" />
       
       <div className="container relative z-10 px-6">
         <motion.div
@@ -124,7 +123,7 @@ export default function ExperienceSection() {
                     </div>
                   </motion.div>
 
-                  <Card className="border-l-4 hover-elevate active-elevate-2 transition-all group" style={{
+                  <Card className="border-l-4 hover-elevate active-elevate-2 transition-all group glass-panel rounded-2xl" style={{
                     borderLeftColor: `hsl(var(--${exp.color}))`
                   }}>
                     <div className="p-5">
