@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Brain, Layers, Sparkles, Target } from "lucide-react";
-import profileImage from "@assets/syed-iliyaz.jpg";
+import profileImage from "@assets/iimagee.jpeg";
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -52,20 +52,17 @@ export default function AboutSection() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="relative"
             >
-              <div className="relative w-full max-w-md mx-auto">
+              <div className="relative w-full max-w-xs md:max-w-sm mx-auto -mt-30 md:-mt-60">
                 <div className="absolute -inset-1 bg-primary rounded-2xl blur-lg opacity-30" />
                 <div className="relative rounded-2xl overflow-hidden border-2 border-primary/30 shadow-xl">
                   <img
-                    src={""}
+                    src={profileImage}
                     alt="Syed Iliyaz"
                     className="w-full h-auto object-cover"
                     style={{
                       clipPath: 'inset(5% 5% 5% 5%)',
                     }}
                   />
-                </div>
-                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 glass-panel rounded-full px-5 py-2 text-xs uppercase tracking-[0.35em] text-foreground/70">
-                  Founder at Aternity
                 </div>
               </div>
             </motion.div>
