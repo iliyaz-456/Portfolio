@@ -10,11 +10,6 @@ export default function HeroSection() {
 
   const quickStats = [
     {
-      title: "Startup Builder",
-      description: "Founder of Aternity",
-      icon: Rocket,
-    },
-    {
       title: "AI + Full-Stack",
       description: "Product engineer",
       icon: Cpu,
