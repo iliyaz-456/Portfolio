@@ -72,7 +72,7 @@ export default function HeroSection() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-medium"
           >
-           Entrepreneur | SIH Finalist 2025 | AI & Full-Stack Developer
+           Entrepreneurr | SIH Finalist 2025 | AI & Full-Stack Developer
           </motion.p>
 
           <motion.p
